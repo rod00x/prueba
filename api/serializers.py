@@ -13,5 +13,6 @@ class PostSerializersAdd(serializers.ModelSerializer):
 
 class PostSerializersUpdateStok(serializers.ModelSerializer):
     class Meta:
-        model = Product
+        model  = Product
+        # fields = ['stok']
         exclude = ['sku', 'name', 'date_published', 'date_updated', 'price', 'status']
